@@ -1,0 +1,158 @@
+<html>
+<head>
+  <title>Angel Boot Camp</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $(".speaker").hover(
+      function() {
+        $(this).find(".off").animate({"opacity": "0"}, "slow");
+      },
+      function() {
+        $(this).find(".off").animate({"opacity": "1"}, "slow");
+      }
+    )
+  })
+  </script>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 62.5%; /* sets base font size to 10 pt */
+  }
+  .wrapper {
+    width: 960px;
+    margin: 0px auto;
+  }
+  #header {
+    margin: 40px 0px;
+  }
+  #header h1 {
+    font-size: 5em;
+    margin: 0px 0px 10px 0px;
+  }
+  #header .info {
+    font-size: 1.2em;
+  }
+  #content {
+    font-size: 1.2em;
+  }
+  #speakers {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .speaker {
+    width: 225px;
+    margin: 0px 15px 15px 0px;
+    float: left;
+  }
+  .speaker .name, .speaker .title, .speaker .affiliation {
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  .speaker a {
+    text-decoration: none;
+  }
+  .speaker a:hover {
+    text-decoration: underline;
+  }
+  .speaker .avatars {
+    position: relative;
+    height: 150px;
+  }
+  .speaker .avatar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .speaker .off {
+    z-index: 10;
+  }
+  #agenda {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  #agenda .agenda_item .time {
+    margin-right: 5px;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="header">
+      <h1>Angel Boot Camp</h1>
+      <div class="info">
+        June 1, 2010, Boston, MA
+      </div>
+    </div>
+    <div id="content">
+      <h2>Learn angel investing from the experts</h2>
+      <p>Have you thought about angel investing but weren't sure whether it was for you or how to get started? Here's a chance to learn from the experts. We'll have a dozen or more of the best angels on hand -- some local, some from around the country -- to share their experiences. Why do they do it? How do they find and evaluate potential investments? What's the right amount of money to invest? How do they set terms? What are the legal issues around angel investing?</p>
+      <p>These are the questions Angel Boot Camp was designed to answer. Join us for an afternoon of learning and networking. Any maybe, just maybe, be the angel that helps build the next Facebook.</p>
+      <h2>Tentative Agenda</h2>
+      <ul id="agenda">
+        <li class="agenda_item"><span class="time">12:00 - 13:30:</span><span class="description">Lunch with an angel</span></li>
+        <li class="agenda_item"><span class="time">14:00 - 17:00:</span><span class="description">Talks and panels</span></li>
+        <li class="agenda_item"><span class="time">17:30 - 19:00:</span><span class="description">Reception</span></li>
+        <li class="agenda_item"><span class="time">20:00 - 22:00:</span><span class="description">Seed Boston startup showcase</span></li>
+      </ul>
+      <p>Next day: TechStars Investor Day</p>
+      <h2>Speakers</h2>
+      <ul id="speakers">
+        <li class="speaker">
+          <div class="avatars">
+            <img class="avatar off" src="david_cohen_bw.jpg" />
+            <img class="avatar on" src="david_cohen.jpg" />
+          </div>
+          <div class="metadata">
+            <div class="name"><a href="http://www.davidgcohen.com/">David Cohen</a></div>
+            <div class="title">Founder</div>
+            <div class="affiliation"><a href="http://www.techstars.org/">TechStars</a></div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="avatars">
+            <img class="avatar off" src="dharmesh_shah_bw.jpg" />
+            <img class="avatar on" src="dharmesh_shah.jpg" />
+          </div>
+          <div class="metadata">
+            <div class="name"><a href="http://onstartups.com/">Dharmesh Shah</a></div>
+            <div class="title">Founder</div>
+            <div class="affiliation"><a href="http://www.hubspot.com/">HubSpot</a></div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="avatars">
+            <img class="avatar off" src="angus_davis_bw.jpg" />
+            <img class="avatar on" src="angus_davis.jpg" />
+          </div>
+          <div class="metadata">
+            <div class="name"><a href="http://angusdavis.com/">Angus Davis</a></div>
+            <div class="title">Founder</div>
+            <div class="affiliation"><a href="http://swipely.com/">Swipely</a></div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="avatars">
+            <img class="avatar off" src="bill_warner_bw.jpg" />
+            <img class="avatar on" src="bill_warner.jpg" />
+          </div>
+          <div class="metadata">
+            <div class="name"><a href="http://billwarner.posterous.com/">Bill Warner</a></div>
+            <div class="title">President</div>
+            <div class="affiliation">Warner Research</div>
+          </div>
+        </li>
+      </ul>
+      <div>More speakers coming soon...</div>
+    </div>
+    <div id="footer">
+      Organized by <a href="http://jonpierce.com">Jon Pierce</a>
+    </div>
+  </div>
+<script>
+</body>
+</html>
