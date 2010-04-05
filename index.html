@@ -4,6 +4,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
+    $("#speakers").show()
     $(".speaker").hover(
       function() {
         $(this).find(".off").animate({"opacity": "0"}, "slow");
@@ -31,6 +32,7 @@
   #header h1 {
     font-size: 5em;
     margin: 0px 0px 10px 0px;
+    color: rgb(0,93,179);
   }
   #header .info {
     font-size: 1.2em;
@@ -38,7 +40,14 @@
   #content {
     font-size: 1.2em;
   }
+  #content h2 {
+    color: rgb(0,93,179);
+  }
+  #footer {
+    margin-top: 20px;
+  }
   #speakers {
+    display: none;
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -70,13 +79,32 @@
   .speaker .off {
     z-index: 10;
   }
+  a, a:active, a:visited {
+    color: rgb(0,93,179);
+  }
   #agenda {
     list-style: none;
     margin: 0px;
     padding: 0px;
   }
   #agenda .agenda_item .time {
-    margin-right: 5px;
+    margin-right: 10px;
+  }
+  .button {
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    background-color: rgb(0,93,179);
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 2px 12px;
+  }
+  .button:hover {
+  }
+  .highlight {
+    padding: 1px 5px;
+    background-color: rgb(230, 239, 248);
   }
   </style>
 </head>
@@ -89,7 +117,7 @@
       </div>
     </div>
     <div id="content">
-      <h2>Learn angel investing from the experts</h2>
+      <h2>Learn Angel Investing from the Experts</h2>
       <p>Have you thought about angel investing but weren't sure whether it was for you or how to get started? Here's a chance to learn from the experts. We'll have a dozen or more of the best angels on hand -- some local, some from around the country -- to share their experiences. Why do they do it? How do they find and evaluate potential investments? What's the right amount of money to invest? How do they set terms? What are the legal issues around angel investing?</p>
       <p>These are the questions Angel Boot Camp was designed to answer. Join us for an afternoon of learning and networking. Any maybe, just maybe, be the angel that helps build the next Facebook.</p>
       <h2>Tentative Agenda</h2>
@@ -97,9 +125,16 @@
         <li class="agenda_item"><span class="time">12:00 - 13:30:</span><span class="description">Lunch with an angel</span></li>
         <li class="agenda_item"><span class="time">14:00 - 17:00:</span><span class="description">Talks and panels</span></li>
         <li class="agenda_item"><span class="time">17:30 - 19:00:</span><span class="description">Reception</span></li>
-        <li class="agenda_item"><span class="time">20:00 - 22:00:</span><span class="description">Seed Boston startup showcase</span></li>
+        <li class="agenda_item"><span class="time">20:00 - 22:00:</span><span class="description">Startup showcase</span></li>
       </ul>
       <p>Next day: TechStars Investor Day</p>
+      <h2>Request an Invite</h2>
+      <p>
+        Request an invite if you'd like to <a class="highlight" href="http://spreadsheets.google.com/viewform?hl=en&formkey=dEYtSWVSeVE2N1BrU1pHMzVmVExGNmc6MA">attend Angel Boot Camp</a> or <a class="highlight" href="http://spreadsheets.google.com/viewform?hl=en&formkey=dFFSc3J3VURLa0s4MUJEVWFlVHRzbVE6MA">present at the startup showcase</a>. For more info, follow <a href="http://twitter.com/angelbootcamp">@angelbootcamp</a> or <a href="http://twitter.com/jonpierce">@jonpierce</a> on Twitter or email Jon at <a href="mailto:contact@jonpierce.com">contact@jonpierce.com</a>. Also feel free to reach out by email if you'd like to sponsor the event. Space will be limited, and responses will go out as quickly as possible but might not be immediate.
+      </p>
+      <h2>Vote for Boston's Best Angel Investors</h2>
+      <p>Have an opinion on who are Boston's best angel investors? We're taking the pulse of the community and will make the results available by mid-April. <a href="http://bit.ly/bRLIf4">Vote here!</a>
+      <!-- <a class="button">Request an invite</a> -->
       <h2>Speakers</h2>
       <ul id="speakers">
         <li class="speaker">
@@ -150,7 +185,6 @@
       <div>More speakers coming soon...</div>
     </div>
     <div id="footer">
-      Organized by <a href="http://jonpierce.com">Jon Pierce</a>
     </div>
   </div>
 <script>
