@@ -1,20 +1,6 @@
 <html>
 <head>
   <title>Angel Boot Camp: Learn Angel Investing from the Experts - June 1, 2010, Boston, MA</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $("#speakers").show()
-    $(".speaker").hover(
-      function() {
-        $(this).find(".off").animate({"opacity": "0"}, "slow");
-      },
-      function() {
-        $(this).find(".off").animate({"opacity": "1"}, "slow");
-      }
-    )
-  })
-  </script>
   <style>
   body {
     margin: 0;
@@ -103,7 +89,7 @@
   .button:hover {
   }
   .highlight {
-    padding: 1px 5px;
+    padding: 1px 4px;
     background-color: rgb(230, 239, 248);
   }
   </style>
@@ -120,48 +106,26 @@
       <h2>Learn Angel Investing from the Experts</h2>
       <p>Have you thought about angel investing but weren't sure whether it was for you or how to get started? Here's a chance to learn from the experts. We'll have a dozen or more of the best angels on hand -- some local, some from around the country -- to share their experiences. Why do they do it? How do they find and evaluate potential investments? What's the right amount of money to invest? How do they set terms? What are the legal issues around angel investing?</p>
       <p>These are the questions Angel Boot Camp was created to answer. Join us for an afternoon of learning and networking. And maybe, just maybe, you'll be the angel that helps make the next Facebook possible.</p>
-      <p>Oh, and yes, this event was partly inspired by Y Combinator's <a href="http://angelconf.com/">AngelConf</a>. All due credit.</p>
+      <p>Oh, and yes, Angel Boot Camp was partly inspired by Y Combinator's <a href="http://angelconf.com/">AngelConf</a>. All due credit there. And lest there be any confusion, it's being organized independently and is not affiliated with either YC or TechStars.</p>
       <h2>Tentative Agenda</h2>
       <ul id="agenda">
         <li class="agenda_item"><span class="time">12:00 - 13:30:</span><span class="description">Lunch with an angel</span></li>
         <li class="agenda_item"><span class="time">14:00 - 17:00:</span><span class="description">Talks and panels</span></li>
         <li class="agenda_item"><span class="time">17:30 - 19:00:</span><span class="description">Reception</span></li>
-        <li class="agenda_item"><span class="time">20:00 - 22:00:</span><span class="description">Startup showcase</span></li>
+        <li class="agenda_item"><span class="time">20:00 - 22:00:</span><span class="description">Startup demos</span></li>
       </ul>
       <p>Next day: TechStars Investor Day</p>
       <h2>Request an Invite</h2>
       <p>
-        Request an invite if you'd like to <a class="highlight" href="http://spreadsheets.google.com/viewform?hl=en&formkey=dEYtSWVSeVE2N1BrU1pHMzVmVExGNmc6MA">attend Angel Boot Camp</a> or <a class="highlight" href="http://spreadsheets.google.com/viewform?hl=en&formkey=dFFSc3J3VURLa0s4MUJEVWFlVHRzbVE6MA">present at the startup showcase</a>. For more info, follow <a href="http://twitter.com/angelbootcamp">@angelbootcamp</a> or <a href="http://twitter.com/jonpierce">@jonpierce</a> on Twitter or email us at <a href="mailto:angelbootcamp@seedboston.com">angelbootcamp@seedboston.com</a>. Also feel free to reach out by email if you'd like to sponsor the event. Space will be limited, and responses will go out as quickly as possible but might not be immediate.
+        Request an invite if you'd like to <a class="highlight" href="http://spreadsheets.google.com/viewform?hl=en&formkey=dEYtSWVSeVE2N1BrU1pHMzVmVExGNmc6MA">attend Angel Boot Camp</a> or <a class="highlight" href="http://spreadsheets.google.com/viewform?hl=en&formkey=dFFSc3J3VURLa0s4MUJEVWFlVHRzbVE6MA">demo your startup</a>. For more info, follow <a href="http://twitter.com/angelbootcamp">@angelbootcamp</a> or <a href="http://twitter.com/jonpierce">@jonpierce</a> on Twitter or email us at <a href="mailto:angelbootcamp@seedboston.com">angelbootcamp@seedboston.com</a>. Also feel free to reach out by email if you'd like to sponsor the event. Space will be limited, and responses will go out as quickly as possible but might not be immediate.
       </p>
       <h2>Spread the Word</h2>
-      <p>Know people who could or should be angel investing? Let them know about this event and encourage them to attend! Do your part to make Boston a better place for early-stage startups.</p>
+      <p>Know people who could or should be angel investing? Let them know about Angel Boot Camp and encourage them to attend! Do your part to make Boston a better place for early-stage startups. Share on <a href="http://twitter.com/?status=Interested%20in%20becoming%20an%20angel%20investor%20or%20pitching%20your%20startup%3F%20Check%20out%20Angel%20Boot%20Camp%3A%20http%3A%2F%2Fbit.ly%2Fangelbootcamp%20%2Fcc%20%40angelbootcamp">Twitter</a> or <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fseedboston.com%2Fangelbootcamp%2F">Facebook</a>.</p>
       <h2>Vote for Boston's Best Angel Investors</h2>
       <p>Have an opinion on who are Boston's best angel investors? We're taking the pulse of the community and will make the results available by mid-April. <a href="http://bit.ly/bRLIf4">Vote here!</a>
       <!-- <a class="button">Request an invite</a> -->
       <h2>Speakers</h2>
       <ul id="speakers">
-        <li class="speaker">
-          <div class="avatars">
-            <img class="avatar off" src="david_cohen_bw.jpg" />
-            <img class="avatar on" src="david_cohen.jpg" />
-          </div>
-          <div class="metadata">
-            <div class="name"><a href="http://www.davidgcohen.com/">David Cohen</a></div>
-            <div class="title">Founder</div>
-            <div class="affiliation"><a href="http://www.techstars.org/">TechStars</a></div>
-          </div>
-        </li>
-        <li class="speaker">
-          <div class="avatars">
-            <img class="avatar off" src="dharmesh_shah_bw.jpg" />
-            <img class="avatar on" src="dharmesh_shah.jpg" />
-          </div>
-          <div class="metadata">
-            <div class="name"><a href="http://onstartups.com/">Dharmesh Shah</a></div>
-            <div class="title">Founder</div>
-            <div class="affiliation"><a href="http://www.hubspot.com/">HubSpot</a></div>
-          </div>
-        </li>
         <li class="speaker">
           <div class="avatars">
             <img class="avatar off" src="angus_davis_bw.jpg" />
@@ -184,12 +148,57 @@
             <div class="affiliation">Warner Research</div>
           </div>
         </li>
+        <li class="speaker">
+          <div class="avatars">
+            <img class="avatar off" src="david_cohen_bw.jpg" />
+            <img class="avatar on" src="david_cohen.jpg" />
+          </div>
+          <div class="metadata">
+            <div class="name"><a href="http://www.davidgcohen.com/">David Cohen</a></div>
+            <div class="title">Founder</div>
+            <div class="affiliation"><a href="http://www.techstars.org/">TechStars</a></div>
+          </div>
+        </li>
+        <li class="speaker">
+          <div class="avatars">
+            <img class="avatar off" src="dharmesh_shah_bw.jpg" />
+            <img class="avatar on" src="dharmesh_shah.jpg" />
+          </div>
+          <div class="metadata">
+            <div class="name"><a href="http://onstartups.com/">Dharmesh Shah</a></div>
+            <div class="title">Founder</div>
+            <div class="affiliation"><a href="http://www.hubspot.com/">HubSpot</a></div>
+          </div>
+        </li>
       </ul>
       <div>More speakers coming soon...</div>
     </div>
     <div id="footer">
     </div>
   </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script>
+$(document).ready(function() {
+  $("#speakers").show()
+  $(".speaker").hover(
+    function() {
+      $(this).find(".off").animate({"opacity": "0"}, "slow");
+    },
+    function() {
+      $(this).find(".off").animate({"opacity": "1"}, "slow");
+    }
+  )
+})
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2353215-4']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>
