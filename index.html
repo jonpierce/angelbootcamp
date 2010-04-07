@@ -195,7 +195,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
-  $("#speakers").show()
   $(".speaker").hover(
     function() {
       $(this).find(".off").animate({"opacity": "0"}, "slow");
@@ -204,6 +203,7 @@ $(document).ready(function() {
       $(this).find(".off").animate({"opacity": "1"}, "slow");
     }
   )
+  $("#speakers").show()
 })
 </script>
 <script type="text/javascript">
