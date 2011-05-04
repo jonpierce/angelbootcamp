@@ -58,17 +58,36 @@
   font-family: "lucida grande", "lucida sans unicode", sans-serif; 
   background: transparent url(../images/premier.png) no-repeat;
   width: 232px;
-  height:41px;
-  padding-top:6px;
-  color:#fff;
-  text-shadow:0 -1px 0 #0a60a7;
-  font-size:22px;
+  height: 41px;
+  padding-top: 6px;
+  color: #fff;
+  text-shadow: 0 -1px 0 #0a60a7;
+  font-size: 22px;
 }
 #request-invite-button:hover {
   background-position: -232px 0;
 }
 #request-invite-button:active {
   background-position: -464px 0;
+}
+#request-invite-button-wrapper {
+  width: 310px;
+}
+#learn-more {
+  margin-top: -33px;
+  float: right;
+}
+#about {
+  margin-top: 25px;
+}
+#about h2 {
+  /*font-family: 'Allerta Stencil', serif;*/
+  font-family: 'Raleway', serif;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+#about p {
+  margin: 15px 0 0 0;
 }
 #footer {
   width: 960px;
