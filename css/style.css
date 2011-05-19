@@ -90,6 +90,13 @@
 #about p {
   margin: 15px 0 0 0;
 }
+#sponsors a {
+  margin-right: 30px;
+}
+#sponsors img {
+  max-width: 225px;
+  max-height: 75px;
+}
 #footer {
   width: 960px;
   margin: 0px auto 100px;
