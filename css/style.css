@@ -90,6 +90,23 @@
 #about p {
   margin: 15px 0 0 0;
 }
+#agenda {
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0px;
+}
+.agenda_item {
+  margin-bottom: 5px;
+}
+.break {
+  color: #bbb;
+}
+#agenda .time {
+  margin-right: 20px;
+  text-align: right;
+  display: inline-block;
+  width: 30px;
+}
 #sponsors a {
   margin-right: 30px;
 }
