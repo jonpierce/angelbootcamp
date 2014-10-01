@@ -80,14 +80,14 @@
 }
 #about {
 }
-#about h2 {
+#main h2 {
   margin-top: 25px;
   /*font-family: 'Allerta Stencil', serif;*/
   font-family: 'Raleway', serif;
   font-size: 1.8em;
   font-weight: normal;
 }
-#about p {
+#main p {
   margin: 15px 0 0 0;
 }
 #agenda {
