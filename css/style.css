@@ -111,8 +111,12 @@
   margin-right: 30px;
 }
 #sponsors img {
+/*
   max-width: 225px;
   max-height: 75px;
+*/
+  height: 44px;
+  width: auto;
 }
 #footer {
   width: 960px;
